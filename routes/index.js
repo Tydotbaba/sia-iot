@@ -33,7 +33,7 @@ router.get('/', (req, res) => {
 		console.log(now)
 		let seconds = now - queryTime
 		seconds = Math.floor((seconds % (1000 * 60)) / 1000);
-		if(seconds > 10) {
+		if(seconds > 100) {
 			//set state to false
 			state = false;
 		}
